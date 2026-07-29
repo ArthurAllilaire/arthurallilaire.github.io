@@ -45,10 +45,10 @@ def add_download_link(html_file: Path, pdf_file: Path):
 
 
 def main():
-    base_name = "Arthur_Allilaire_CV"
+    base_name = "Arthur_Allilaire_CV_onepage"
 
     script_dir = Path(__file__).parent
-    source_dir = script_dir.parent / "render-cv" / "rendercv_output"
+    source_dir = script_dir.parent / "site-code" / "rendercv_output_onepage"
 
     html_dest, pdf_dest = copy_cv_files(base_name, source_dir, script_dir)
     add_download_link(html_dest, pdf_dest)
